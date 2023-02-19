@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: greenyellow;
+    font-family: Verdana;
+}
+.logo{
+    color:black;
+    font-size: 30px;
+}
+
+.logo span{
+    color: white;
+}
+.menu{
+    background-color: green;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+.menu ul{
+    list-style-type: none;     /* it removes dots and numbering */
+    display: flex;
+}
+.menu ul li{
+    padding: 10px;
+    position: relative; /* without this no dropdown menu*/
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.menu ul li a{
+    color: white;
+    text-decoration: none;/*removes underlines*/
+    font-size: 20px;
+    transition: all 0.4s;
+}
+.menu ul li a:hover{  /* this changes the color on the name of link where the pointer touches*/
+    color: black;
+  
+}
+.menu fa{
+    margin-right: 8px;
+}  
+.sub-menu-1{
+    display: none ;
+}
+.menu ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: green;
+}
+.sub-menu-1 ul{
+    display: block;/*allowed droped menu to be arranged downward otherwise its across---again its ul not li when doing this*/
+    margin: 15px;
+}
+.sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+}
+.top{
+    display: flex;
+}
+.top{
+   color:white;
+   margin-left: 25%;
+}
+
+.photos{
+    display: flex;
+    padding-bottom: 3%;
+    margin-left: 25%;
+}
+.column{
+    padding-right: 2%;
+}
+.column p{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    
+}
+p i{
+    background-color: green;
+    float: right;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    color: white;
+    
+}
+.pagnation{
+    text-align: center;
+}
+.pagnation a{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    background-color: green;
+    color: black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-top: 10px;
+}
+.pagnation a:hover{
+    background-color: yellowgreen;
+    
+}
+footer{
+    background-color: black;
+    height: auto;
+}
+.copywrite{
+    color: white;
+
+}
+.copywrite a{
+    color: green;
+    text-decoration: none;
+}
+.form{
+    display: flex;
+}
+label{
+    color: white;
+}
+form a{
+    text-decoration: none;
+}
+form p{
+    color: white;
+}
+.form.copywrite{
+    float: left;
+}
+
+
